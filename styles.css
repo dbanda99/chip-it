@@ -1,143 +1,258 @@
 /* Reset and basic styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Navigation Bar */
-  .navbar {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-  .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav-menu {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-menu li {
-    margin-left: 20px;
-  }
-  
-  .nav-menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu li a:hover {
-    color: #18bc9c;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #18bc9c;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #149f82;
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .services h2 {
-    margin-bottom: 20px;
-  }
-  
-  .service-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .service {
-    flex: 1;
-    max-width: 300px;
-    margin: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .service h3 {
-    margin-bottom: 10px;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 40px 20px;
-    background-color: #eaeaea;
-    text-align: center;
-  }
-  
-  /* Contact Section */
-  .contact {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #000;
+  padding: 10px 20px;
+}
+
+/* Using CSS Grid to position:
+   - The logo (left)
+   - The site title (center)
+   - The nav menu (right) */
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Area */
+.logo {
+  justify-self: start;
+}
+
+.logo-img {
+  width: 120px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Centered Title */
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  justify-self: center;
+  margin: 0;
+}
+
+/* Navigation Menu (right side) */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensures dropdown aligns nicely with text */
+  justify-self: end;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #007BFF;
+}
+
+/* Language Selector (Dropdown + Go Button) */
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+#languageDropdown {
+  padding: 5px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+#translateBtn {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#translateBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section with Picsum image */
+.hero {
+  background: url('https://picsum.photos/1600/600') center center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Service Cards Container: 3 per row, bigger cards */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  justify-items: center; /* Center each card in its column */
+}
+
+/* Individual Service Card: larger width/height */
+.service-card {
+  width: 320px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Image Container within the card */
+.card-image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Service Title */
+.service-card h3 {
+  margin: 10px 0;
+  color: #007BFF;
+}
+
+/* Cost and Delivery Time styles */
+.average-cost,
+.delivery-time {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Book Button */
+.book-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

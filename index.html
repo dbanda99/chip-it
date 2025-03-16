@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chip-IT - Professional IT Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Header and Navigation -->
   <header>
     <nav class="navbar">
       <div class="nav-container">
+        <!-- Logo Area (Image Option) -->
         <div class="logo">
-          <!-- You can replace the text with an image if available -->
-          <a href="index.html">Chip-IT</a>
+          <!-- Replace "path/to/logo.png" with your actual logo path -->
+          <a href="index.html">
+            <img src="path/to/logo.png" alt="Chip-IT Logo" class="logo-img" />
+          </a>
         </div>
+
+        <!-- Centered Title -->
+        <h1 class="site-title" id="navTitle">Chip-IT</h1>
+
+        <!-- Navigation Menu -->
         <ul class="nav-menu">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#support">Support</a></li>
+          <!-- Assign IDs to each link for translation -->
+          <li><a href="#services" id="navServices">Services</a></li>
+          <li><a href="#about" id="navAbout">About Us</a></li>
+          <li><a href="#contact" id="navContact">Contact</a></li>
+          <li><a href="#support" id="navSupport">Support</a></li>
+          
+          <!-- Language Selector (Dropdown + Go Button) -->
+          <li class="language-selector">
+            <select id="languageDropdown">
+              <option value="en" selected>English</option>
+              <option value="es">Español</option>
+            </select>
+            <button id="translateBtn">Go</button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -30,48 +48,268 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Welcome to Chip-IT</h1>
-        <p>Your trusted partner for computer repair and IT solutions</p>
-        <a href="#contact" class="btn">Get Started</a>
+        <h2 id="heroTitle">Welcome to Chip-IT</h2>
+        <p id="heroSubtitle">Your trusted partner for computer repair and IT solutions</p>
+        <a href="#contact" class="btn" id="heroButton">Get Started</a>
       </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-      <h2>Our Services</h2>
-      <div class="service-items">
-        <div class="service">
-          <h3>Computer Repair</h3>
-          <p>Expert repairs for all types of computers and devices.</p>
+      <h2 id="servicesTitle">Our Services</h2>
+      <div class="service-cards">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=1" alt="Virus and Malware Removal">
+          </div>
+          <h3 id="service1Title">Virus and Malware Removal</h3>
+          <p class="average-cost" id="service1Cost">Average Cost: $59+</p>
+          <p class="delivery-time" id="service1Time">Delivery Time (Est): 2-4 Hours</p>
+          <button class="book-btn" id="service1Book">BOOK</button>
         </div>
-        <div class="service">
-          <h3>IT Support</h3>
-          <p>Reliable support for businesses and home users.</p>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=2" alt="OS Reinstallation & Update">
+          </div>
+          <h3 id="service2Title">OS Reinstallation & Update</h3>
+          <p class="average-cost" id="service2Cost">Average Cost: $49+</p>
+          <p class="delivery-time" id="service2Time">Delivery Time (Est): 1 Day</p>
+          <button class="book-btn" id="service2Book">BOOK</button>
         </div>
-        <div class="service">
-          <h3>Custom Solutions</h3>
-          <p>Tailored IT solutions to meet your unique needs.</p>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=3" alt="Data Backup & Recovery">
+          </div>
+          <h3 id="service3Title">Data Backup & Recovery</h3>
+          <p class="average-cost" id="service3Cost">Average Cost: $79+</p>
+          <p class="delivery-time" id="service3Time">Delivery Time (Est): 2 Days</p>
+          <button class="book-btn" id="service3Book">BOOK</button>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=4" alt="Hardware Diagnostics & Repairs">
+          </div>
+          <h3 id="service4Title">Hardware Diagnostics & Repairs</h3>
+          <p class="average-cost" id="service4Cost">Average Cost: $89+</p>
+          <p class="delivery-time" id="service4Time">Delivery Time (Est): Varies</p>
+          <button class="book-btn" id="service4Book">BOOK</button>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=5" alt="System Cleaning & Maintenance">
+          </div>
+          <h3 id="service5Title">System Cleaning & Maintenance</h3>
+          <p class="average-cost" id="service5Cost">Average Cost: $39+</p>
+          <p class="delivery-time" id="service5Time">Delivery Time (Est): 1-2 Hours</p>
+          <button class="book-btn" id="service5Book">BOOK</button>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=6" alt="Software Troubleshooting">
+          </div>
+          <h3 id="service6Title">Software Troubleshooting</h3>
+          <p class="average-cost" id="service6Cost">Average Cost: $49+</p>
+          <p class="delivery-time" id="service6Time">Delivery Time (Est): 2-3 Hours</p>
+          <button class="book-btn" id="service6Book">BOOK</button>
+        </div>
+
+        <!-- Service Card 7 -->
+        <div class="service-card">
+          <div class="card-image">
+            <img src="https://picsum.photos/320/180?random=7" alt="Network & Connectivity">
+          </div>
+          <h3 id="service7Title">Network & Connectivity</h3>
+          <p class="average-cost" id="service7Cost">Average Cost: $59+</p>
+          <p class="delivery-time" id="service7Time">Delivery Time (Est): 2-4 Hours</p>
+          <button class="book-btn" id="service7Book">BOOK</button>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-      <h2>About Us</h2>
-      <p>At Chip-IT, we pride ourselves on delivering exceptional IT services with a focus on quality, reliability, and customer satisfaction.</p>
+      <h2 id="aboutTitle">About Us</h2>
+      <p id="aboutText">
+        At Chip-IT, we pride ourselves on delivering exceptional IT services with
+        a focus on quality, reliability, and customer satisfaction.
+      </p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>Ready to solve your IT problems? Get in touch with us today!</p>
+      <h2 id="contactTitle">Contact Us</h2>
+      <p id="contactText">
+        Ready to solve your IT problems? Get in touch with us today!
+      </p>
       <!-- You can add a contact form here if desired -->
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; Copyright 2025 Chip-IT. All Rights Reserved.</p>
+    <p id="footerText">&copy; 2025 Chip-IT. All Rights Reserved.</p>
   </footer>
+
+  <!-- JavaScript for Language Translation -->
+  <script>
+    // Dictionary of translations for each text ID
+    const translations = {
+      en: {
+        navTitle: "Chip-IT",
+        navServices: "Services",
+        navAbout: "About Us",
+        navContact: "Contact",
+        navSupport: "Support",
+
+        heroTitle: "Welcome to Chip-IT",
+        heroSubtitle: "Your trusted partner for computer repair and IT solutions",
+        heroButton: "Get Started",
+
+        servicesTitle: "Our Services",
+
+        service1Title: "Virus and Malware Removal",
+        service1Cost: "Average Cost: $59+",
+        service1Time: "Delivery Time (Est): 2-4 Hours",
+        service1Book: "BOOK",
+
+        service2Title: "OS Reinstallation & Update",
+        service2Cost: "Average Cost: $49+",
+        service2Time: "Delivery Time (Est): 1 Day",
+        service2Book: "BOOK",
+
+        service3Title: "Data Backup & Recovery",
+        service3Cost: "Average Cost: $79+",
+        service3Time: "Delivery Time (Est): 2 Days",
+        service3Book: "BOOK",
+
+        service4Title: "Hardware Diagnostics & Repairs",
+        service4Cost: "Average Cost: $89+",
+        service4Time: "Delivery Time (Est): Varies",
+        service4Book: "BOOK",
+
+        service5Title: "System Cleaning & Maintenance",
+        service5Cost: "Average Cost: $39+",
+        service5Time: "Delivery Time (Est): 1-2 Hours",
+        service5Book: "BOOK",
+
+        service6Title: "Software Troubleshooting",
+        service6Cost: "Average Cost: $49+",
+        service6Time: "Delivery Time (Est): 2-3 Hours",
+        service6Book: "BOOK",
+
+        service7Title: "Network & Connectivity",
+        service7Cost: "Average Cost: $59+",
+        service7Time: "Delivery Time (Est): 2-4 Hours",
+        service7Book: "BOOK",
+
+        aboutTitle: "About Us",
+        aboutText:
+          "At Chip-IT, we pride ourselves on delivering exceptional IT services with a focus on quality, reliability, and customer satisfaction.",
+
+        contactTitle: "Contact Us",
+        contactText:
+          "Ready to solve your IT problems? Get in touch with us today!",
+
+        footerText: "© 2025 Chip-IT. All Rights Reserved."
+      },
+
+      es: {
+        navTitle: "Chip-IT",
+        navServices: "Servicios",
+        navAbout: "Acerca de",
+        navContact: "Contacto",
+        navSupport: "Soporte",
+
+        heroTitle: "Bienvenido a Chip-IT",
+        heroSubtitle: "Tu socio de confianza para la reparación de computadoras y soluciones de TI",
+        heroButton: "Comenzar",
+
+        servicesTitle: "Nuestros Servicios",
+
+        service1Title: "Eliminación de Virus y Malware",
+        service1Cost: "Costo Promedio: $59+",
+        service1Time: "Tiempo de Entrega (Est): 2-4 Horas",
+        service1Book: "RESERVAR",
+
+        service2Title: "Reinstalación & Actualización de SO",
+        service2Cost: "Costo Promedio: $49+",
+        service2Time: "Tiempo de Entrega (Est): 1 Día",
+        service2Book: "RESERVAR",
+
+        service3Title: "Respaldo & Recuperación de Datos",
+        service3Cost: "Costo Promedio: $79+",
+        service3Time: "Tiempo de Entrega (Est): 2 Días",
+        service3Book: "RESERVAR",
+
+        service4Title: "Diagnóstico & Reparaciones de Hardware",
+        service4Cost: "Costo Promedio: $89+",
+        service4Time: "Tiempo de Entrega (Est): Variable",
+        service4Book: "RESERVAR",
+
+        service5Title: "Limpieza & Mantenimiento del Sistema",
+        service5Cost: "Costo Promedio: $39+",
+        service5Time: "Tiempo de Entrega (Est): 1-2 Horas",
+        service5Book: "RESERVAR",
+
+        service6Title: "Solución de Problemas de Software",
+        service6Cost: "Costo Promedio: $49+",
+        service6Time: "Tiempo de Entrega (Est): 2-3 Horas",
+        service6Book: "RESERVAR",
+
+        service7Title: "Redes & Conectividad",
+        service7Cost: "Costo Promedio: $59+",
+        service7Time: "Tiempo de Entrega (Est): 2-4 Horas",
+        service7Book: "RESERVAR",
+
+        aboutTitle: "Acerca de Nosotros",
+        aboutText:
+          "En Chip-IT, nos enorgullecemos de ofrecer servicios de TI excepcionales con un enfoque en la calidad, la confiabilidad y la satisfacción del cliente.",
+
+        contactTitle: "Contáctanos",
+        contactText:
+          "¿Listo para resolver tus problemas de TI? ¡Ponte en contacto con nosotros hoy mismo!",
+
+        footerText: "© 2025 Chip-IT. Todos los Derechos Reservados."
+      }
+    };
+
+    // Translate function
+    function translatePage(lang) {
+      // For each key in the chosen language, update the element with the matching ID
+      const langKeys = Object.keys(translations[lang]);
+      langKeys.forEach((key) => {
+        const element = document.getElementById(key);
+        if (element) {
+          element.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    // On page load, default to English
+    window.addEventListener("DOMContentLoaded", () => {
+      translatePage("en");
+
+      // Handle "Go" button click
+      const translateBtn = document.getElementById("translateBtn");
+      const languageDropdown = document.getElementById("languageDropdown");
+
+      translateBtn.addEventListener("click", () => {
+        const selectedLang = languageDropdown.value;
+        translatePage(selectedLang);
+      });
+    });
+  </script>
 </body>
 </html>
+ 
