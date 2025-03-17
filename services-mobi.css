@@ -1,0 +1,25 @@
+/* services-mobi.css */
+
+/* Example media query for extra small screens */
+@media (max-width: 576px) {
+    .carousel-item {
+      height: 50vh;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-brand span {
+      font-size: 1rem;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
