@@ -1,0 +1,20 @@
+/* contact.css */
+
+/* Remove text decoration on social icons */
+.social-icons a {
+  text-decoration: none !important;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  text-decoration: none !important;
+}
+
+/* Optional form spacing or styling */
+.needs-validation .form-label {
+  font-weight: 500;
+}
+
+.footer-custom {
+  position: relative;
+}

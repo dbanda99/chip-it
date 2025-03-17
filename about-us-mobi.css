@@ -1,0 +1,24 @@
+/* about-us-mobi.css */
+
+/* Mobile adjustments for the Hero Section */
+@media (max-width: 576px) {
+    .hero {
+      height: 300px;
+    }
+    .hero-title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Make social icons appear below the text in the footer on small screens */
+  @media (max-width: 576px) {
+    .footer-custom .container.d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-custom .position-absolute.end-0.me-3 {
+      position: static !important;
+      margin-top: 0.5rem;
+    }
+  }
+  

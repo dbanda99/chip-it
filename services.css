@@ -18,10 +18,18 @@
     color: #bbb;
   }
   
-  /* Footer styling */
-  footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  /* Remove underscores or text decorations from links */
+  .social-icons a {
+    text-decoration: none !important;
   }
   
+  /* Optional hover/focus state with no underline */
+  .social-icons a:hover,
+  .social-icons a:focus {
+    text-decoration: none !important;
+  }
+  
+  /* Footer styling if needed */
+  .footer-custom {
+    position: relative;
+  }

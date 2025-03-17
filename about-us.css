@@ -1,0 +1,45 @@
+/* about-us.css */
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://picsum.photos/1920/600?random=20') center center/cover no-repeat;
+    height: 600px;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Main Content Spacing */
+  .container.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Remove underscores or text decorations from links */
+  .social-icons a {
+    text-decoration: none !important;
+  }
+  
+  /* Optional hover/focus state with no underline */
+  .social-icons a:hover,
+  .social-icons a:focus {
+    text-decoration: none !important;
+  }
+  
+  /* Footer styling if needed */
+  .footer-custom {
+    position: relative;
+  }
+  
