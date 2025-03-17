@@ -1,0 +1,20 @@
+/* homepage-mobi.css */
+
+/* Example: Adjust main heading and spacing on very small screens */
+@media (max-width: 576px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main p.lead {
+    font-size: 1rem;
+  }
+
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
