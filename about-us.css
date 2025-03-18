@@ -2,44 +2,85 @@
 
 /* Hero Section Styles */
 .hero {
-    background: url('https://picsum.photos/1920/600?random=20') center center/cover no-repeat;
-    height: 600px;
-    position: relative;
-  }
-  
-  .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-title {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  /* Main Content Spacing */
-  .container.my-5 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  
-  /* Remove underscores or text decorations from links */
-  .social-icons a {
-    text-decoration: none !important;
-  }
-  
-  /* Optional hover/focus state with no underline */
-  .social-icons a:hover,
-  .social-icons a:focus {
-    text-decoration: none !important;
-  }
-  
-  /* Footer styling if needed */
-  .footer-custom {
-    position: relative;
-  }
-  
+  background: url('https://picsum.photos/1920/600?random=20') center center/cover no-repeat;
+  height: 600px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Main Content Spacing */
+.container.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Remove underscores or text decorations from links */
+.social-icons a {
+  text-decoration: none !important;
+}
+
+/* Optional hover/focus state with no underline */
+.social-icons a:hover,
+.social-icons a:focus {
+  text-decoration: none !important;
+}
+
+/* Footer styling if needed */
+.footer-custom {
+  position: relative;
+}
+
+/* ------------------- */
+/* TEAM CARD STYLES    */
+/* ------------------- */
+.team-card {
+  /* Border and radius to mimic the rounded rectangle look */
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  background-color: #fff;
+
+  /* Sizing and spacing */
+  max-width: 300px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 1.5rem;
+  text-align: center;
+
+  /* A subtle box-shadow to elevate the card */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+  /* Make the profile image circular */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* Space between image and text */
+  margin-bottom: 1rem;
+}
+
+.team-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.team-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
