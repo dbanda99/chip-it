@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Endpoint URL for your Node.js server
   const endpointUrl =
-    "https://server-chipit.onrender.com"; // Update to your actual server endpoint
+    "https://server-chipit.onrender.com/send-email"; // Update to your actual server endpoint
 
   // When the user clicks "Confirm" in the modal, redirect to services.html
   confirmBtn.addEventListener("click", () => {
