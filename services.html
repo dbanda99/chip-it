@@ -1,485 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chip-IT Services</title>
-    <!-- Bootstrap CSS (CDN) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons (CDN) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="services.css" />
-    <!-- Mobile-Specific CSS -->
-    <link rel="stylesheet" href="services-mobi.css" />
-    <link rel="icon" type="x-icon" href="images/logo.png" />
-  </head>
-  <body>
-    <!-- Navbar (same as Homepage, no search bar) -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Brand -->
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img
-              src="images/White-Logo.png"
-              alt="Chip Icon"
-              width="30"
-              height="30"
-              class="me-2"
-            />
-            <span>Chip-IT</span>
-          </a>
 
-          <!-- Toggler for mobile view -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chip-IT Services</title>
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="services.css" />
+  <!-- Mobile-Specific CSS -->
+  <link rel="stylesheet" href="services-mobi.css" />
+  <link rel="icon" type="x-icon" href="images/logo.png" />
+</head>
 
-          <!-- Navbar Items -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <!-- Mark 'Services' as active link -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="services.html"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<body>
+  <!-- Navbar (same as Homepage, no search bar) -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/White-Logo.png" alt="Chip Icon" width="30" height="30" class="me-2" />
+          <span>Chip-IT</span>
+        </a>
 
-    <!-- Main Carousel Section -->
-    <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img
-              src="images/carousel/backup_01.png"
-              class="d-block w-100"
-              alt="Slide 1"
-            />
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Data Backup and Recovery</h1>
-                <p>Ensure the safety and security of your critical data, whether for personal, professional, or academic purposes.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img
-              src="images/carousel/cleaning_01.png"
-              class="d-block w-100"
-              alt="Slide 2"
-            />
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Quick & Easy Cleaning</h1>
-                <p>Restore your computer to optimal performance with our thorough cleaning services.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img
-              src="images/carousel/complete_01.png"
-              class="d-block w-100"
-              alt="Slide 3"
-            />
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Exceptional Communication Solutions</h1>
-                <p>Contact us today for a prompt and professional diagnosis of your issues!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </main>
 
-    <!-- Our Services Section -->
-    <div class="container my-5">
-      <!-- Title: Our Services -->
-      <div class="row mb-4">
-        <div class="col-12 p-5 text-center">
-          <h2 class="fw-bold">Our Services</h2>
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Mark 'Services' as active link -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <!-- Row 1: Services 1-3 -->
-      <div class="row mb-4">
-        <!-- Service 1 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/virus-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Virus and Malware Removal"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Virus and Malware Removal</h5>
-              <p class="card-text">
-                Our expert team specializes in removing computer viruses and
-                malware to ensure your system is secure. We protect your data
-                and privacy by thoroughly scanning and eliminating threats,
-                providing you with peace of mind and a safe computing
-                environment.<br />
-                <strong>Price:</strong> $25 - $50 <br />
-                <strong>Estimated Time:</strong> 1 - 3 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+  <!-- Main Carousel Section -->
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="images/carousel/backup_01.png" class="d-block w-100" alt="Slide 1" />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Data Backup and Recovery</h1>
+              <p>Ensure the safety and security of your critical data, whether for personal, professional, or academic
+                purposes.</p>
             </div>
           </div>
         </div>
-        <!-- Service 2 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/system-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Operating System Reinstall/Update"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Operating System Reinstall/Update</h5>
-              <p class="card-text">
-                Keep your computer running smoothly and efficiently. We handle
-                the complete reinstallation or updating of your OS, including
-                driver and software installations.<br />
-                <strong>Price Range:</strong> $30 - $100<br />
-                <strong>Estimated Time:</strong> 2 - 4 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="images/carousel/cleaning_01.png" class="d-block w-100" alt="Slide 2" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Quick & Easy Cleaning</h1>
+              <p>Restore your computer to optimal performance with our thorough cleaning services.</p>
             </div>
           </div>
         </div>
-        <!-- Service 3 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/data-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Data Backup and Recovery"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Data Backup and Recovery</h5>
-              <p class="card-text">
-                We provide comprehensive solutions for backing up your data and
-                recovering lost files due to hardware failures or accidental
-                deletions.<br />
-                <strong>Price Range:</strong> $30 - $100+<br />
-                <strong>Estimated Time:</strong> 2 - 10 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="images/carousel/complete_01.png" class="d-block w-100" alt="Slide 3" />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Exceptional Communication Solutions</h1>
+              <p>Contact us today for a prompt and professional diagnosis of your issues!</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Row 2: Services 4-6 -->
-      <div class="row mb-4">
-        <!-- Service 4 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/hardware-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Hardware Diagnostics and Repair"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Hardware Diagnostics and Repair</h5>
-              <p class="card-text">
-                We identify and resolve hardware issues through thorough
-                diagnostics and necessary repairs or component replacements.<br />
-                <strong>Price Range:</strong> $50 - $250+<br />
-                <strong>Estimated Time:</strong> 1 - 5 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 5 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/cleaning-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="System Cleaning and Maintenance"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">System Cleaning and Maintenance</h5>
-              <p class="card-text">
-                We remove dust, apply thermal paste, and perform software
-                cleanup to improve performance and prevent overheating.<br />
-                <strong>Price Range:</strong> $25 - $100<br />
-                <strong>Estimated Time:</strong> 1 - 2 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 6 -->
-        <div class="col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card service-card w-100">
-            <img
-              src="images/troubleshoot-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Software Troubleshooting"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Software Troubleshooting</h5>
-              <p class="card-text">
-                We fix crashes, installation errors, and compatibility issues
-                for various software (Office, Adobe, etc.).<br />
-                <strong>Price Range:</strong> $50 - $120+<br />
-                <strong>Estimated Time:</strong> 1 - 3 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 3: Service 7 -->
-      <div class="row mb-5">
-        <div class="col-lg-4 mx-auto d-flex align-items-stretch">
-          <div class="card service-card w-100">
-            <img
-              src="images/network-icon.png"
-              class="card-img-top mx-auto d-block mt-3 rounded-circle"
-              alt="Network & Connectivity Troubleshoot"
-              style="width: 140px; height: 140px;"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Network & Connectivity Troubleshoot</h5>
-              <p class="card-text">
-                We resolve Wi-Fi performance, router setup, and connectivity
-                issues to ensure a stable network environment.<br />
-                <strong>Price Range:</strong> $50 - $150+<br />
-                <strong>Estimated Time:</strong> 1 - 3 hours
-              </p>
-              <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <!-- Title: Reviews -->
-      <div class="row mb-4">
-        <div class="col-12 p-lg-5 text-center">
-          <h2 class="fw-bold">Reviews</h2>
-        </div>
-      </div>
-
-      <!-- 3 Placeholders with Text (Featurette Sections) -->
-      <!-- Featurette 1 -->
-      <div class="row featurette mb-5">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Fernanda 
-            <span class="text-muted">Ochoa Castellanos:</span>
-          </h2>
-          <p class="lead">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero expedita ab similique ipsa quas veniam temporibus?
-          </p>
-          <p>
-            Rating:  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </p>
-
-          <p>
-            Laredo, Texas
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            src="https://picsum.photos/500/500?random=1"
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            alt="Featurette 1"
-          />
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <!-- Featurette 2 (reverse order on md+) -->
-      <div class="row featurette mb-5">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">
-            David
-            <span class="text-muted">Garcia</span>
-          </h2>
-          <p class="lead">
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero expedita ab similique ipsa quas veniam temporibus?
-            </p>
-            <p>
-              Rating:  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-  
-            <p>
-              Laredo, Texas
-            </p>
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img
-            src="https://picsum.photos/500/500?random=2"
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            alt="Featurette 2"
-          />
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <!-- Featurette 3 -->
-      <div class="row featurette mb-5">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Andre
-            <span class="text-muted">Linhares</span>
-          </h2>
-          <p class="lead">
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero expedita ab similique ipsa quas veniam temporibus?
-            </p>
-            <p>
-              Rating:  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-  
-            <p>
-              Laredo, Texas
-            </p>
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            src="https://picsum.photos/500/500?random=3"
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            alt="Featurette 3"
-          />
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- /.container -->
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark py-3 footer-custom">
-      <div class="container d-flex align-items-center position-relative">
-        <!-- Centered Text -->
-        <p class="mb-0 text-white w-100 text-center">
-          Copyright &copy; 2025 - David Banda
-        </p>
-        <!-- Social Icons on the Right -->
-        <div class="position-absolute end-0 me-3 social-icons">
-          <!-- Facebook -->
-          <a href="#" class="text-white mx-1" aria-label="Facebook">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <!-- Instagram -->
-          <a href="#" class="text-white mx-1" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <!-- X (formerly Twitter) -->
-          <a href="#" class="text-white mx-1" aria-label="X">
-            <i class="bi bi-x-lg"></i>
-          </a>
-          <!-- LinkedIn -->
-          <a href="#" class="text-white mx-1" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-          </a>
+  <!-- Our Services Section -->
+  <div class="container my-5">
+    <!-- Title: Our Services -->
+    <div class="row mb-4">
+      <div class="col-12 p-5 text-center">
+        <h2 class="fw-bold">Our Services</h2>
+      </div>
+    </div>
+
+    <!-- Row 1: Services 1-3 -->
+    <div class="row mb-4">
+      <!-- Service 1 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/virus-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Virus and Malware Removal" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Virus and Malware Removal</h5>
+            <p class="card-text">
+              Our expert team specializes in removing computer viruses and
+              malware to ensure your system is secure. We protect your data
+              and privacy by thoroughly scanning and eliminating threats,
+              providing you with peace of mind and a safe computing
+              environment.<br />
+              <strong>Price:</strong> $25 - $50 <br />
+              <strong>Estimated Time:</strong> 1 - 3 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
         </div>
       </div>
-    </footer>
+      <!-- Service 2 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/system-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Operating System Reinstall/Update" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Operating System Reinstall/Update</h5>
+            <p class="card-text">
+              Keep your computer running smoothly and efficiently. We handle
+              the complete reinstallation or updating of your OS, including
+              driver and software installations.<br />
+              <strong>Price Range:</strong> $30 - $100<br />
+              <strong>Estimated Time:</strong> 2 - 4 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/data-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Data Backup and Recovery" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Data Backup and Recovery</h5>
+            <p class="card-text">
+              We provide comprehensive solutions for backing up your data and
+              recovering lost files due to hardware failures or accidental
+              deletions.<br />
+              <strong>Price Range:</strong> $30 - $100+<br />
+              <strong>Estimated Time:</strong> 2 - 10 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Bootstrap JS (CDN) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <!-- Custom JS -->
-    <script src="services.js"></script>
-  </body>
+    <!-- Row 2: Services 4-6 -->
+    <div class="row mb-4">
+      <!-- Service 4 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/hardware-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Hardware Diagnostics and Repair" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Hardware Diagnostics and Repair</h5>
+            <p class="card-text">
+              We identify and resolve hardware issues through thorough
+              diagnostics and necessary repairs or component replacements.<br />
+              <strong>Price Range:</strong> $50 - $250+<br />
+              <strong>Estimated Time:</strong> 1 - 5 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 5 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/cleaning-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="System Cleaning and Maintenance" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">System Cleaning and Maintenance</h5>
+            <p class="card-text">
+              We remove dust, apply thermal paste, and perform software
+              cleanup to improve performance and prevent overheating.<br />
+              <strong>Price Range:</strong> $25 - $100<br />
+              <strong>Estimated Time:</strong> 1 - 2 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Service 6 -->
+      <div class="col-lg-4 d-flex align-items-stretch mb-4">
+        <div class="card service-card w-100">
+          <img src="images/troubleshoot-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Software Troubleshooting" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Software Troubleshooting</h5>
+            <p class="card-text">
+              We fix crashes, installation errors, and compatibility issues
+              for various software (Office, Adobe, etc.).<br />
+              <strong>Price Range:</strong> $50 - $120+<br />
+              <strong>Estimated Time:</strong> 1 - 3 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3: Service 7 -->
+    <div class="row mb-5">
+      <div class="col-lg-4 mx-auto d-flex align-items-stretch">
+        <div class="card service-card w-100">
+          <img src="images/network-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
+            alt="Network & Connectivity Troubleshoot" style="width: 140px; height: 140px;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Network & Connectivity Troubleshoot</h5>
+            <p class="card-text">
+              We resolve Wi-Fi performance, router setup, and connectivity
+              issues to ensure a stable network environment.<br />
+              <strong>Price Range:</strong> $50 - $150+<br />
+              <strong>Estimated Time:</strong> 1 - 3 hours
+            </p>
+            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- Title: Reviews -->
+    <div class="row mb-4">
+      <div class="col-12 p-lg-5 text-center">
+        <h2 class="fw-bold">Reviews</h2>
+      </div>
+    </div>
+
+    <!-- 3 Placeholders with Text (Featurette Sections) -->
+    <!-- Featurette 1 -->
+    <div class="row featurette mb-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Fernanda
+          <span class="text-muted">Ochoa Castellanos:</span>
+        </h2>
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi
+          quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio
+          recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero
+          expedita ab similique ipsa quas veniam temporibus?
+        </p>
+        <p>
+          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </p>
+
+        <p>
+          Laredo, Texas
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://picsum.photos/500/500?random=1"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+          alt="Featurette 1" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- Featurette 2 (reverse order on md+) -->
+    <div class="row featurette mb-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">
+          David
+          <span class="text-muted">Garcia</span>
+        </h2>
+        <p class="lead">
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi
+          quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio
+          recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero
+          expedita ab similique ipsa quas veniam temporibus?
+        </p>
+        <p>
+          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </p>
+
+        <p>
+          Laredo, Texas
+        </p>
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://picsum.photos/500/500?random=2"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+          alt="Featurette 2" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- Featurette 3 -->
+    <div class="row featurette mb-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Andre
+          <span class="text-muted">Linhares</span>
+        </h2>
+        <p class="lead">
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptatum facere libero eligendi
+          quaerat aliquid. Rem eaque tempore obcaecati pariatur nisi vitae. Perferendis, optio tenetur distinctio
+          recusandae vel natus autem, ea illum dolor dolores minima ipsam maiores voluptas quos iusto placeat libero
+          expedita ab similique ipsa quas veniam temporibus?
+        </p>
+        <p>
+          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </p>
+
+        <p>
+          Laredo, Texas
+        </p>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://picsum.photos/500/500?random=3"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+          alt="Featurette 3" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="bg-dark py-3 footer-custom">
+    <div class="container d-flex align-items-center position-relative">
+      <!-- Centered Text -->
+      <p class="mb-0 text-white w-100 text-center">
+        Copyright &copy; 2025 - David Banda
+      </p>
+      <!-- Social Icons on the Right -->
+      <div class="position-absolute end-0 me-3 social-icons">
+        <!-- Facebook -->
+        <a href="#" class="text-white mx-1" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="text-white mx-1" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <!-- X (formerly Twitter) -->
+        <a href="#" class="text-white mx-1" aria-label="X">
+          <i class="bi bi-x-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="text-white mx-1" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="services.js"></script>
+  <script> window.chtlConfig = { chatbotId: "7741564378" } </script>
+  <script async data-id="7741564378" id="chatling-embed-script" type="text/javascript"
+    src="https://chatling.ai/js/embed.js"></script>
+</body>
+
 </html>
