@@ -1,0 +1,6 @@
+/* invitations-mobi.css */
+@media (max-width: 576px){
+  .bg-hero{ background-position:center; }
+  .pkg-img{ height:180px; }
+  .package-card .row .col-md-6.text-md-end{ text-align:left !important; }
+}

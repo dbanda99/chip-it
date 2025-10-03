@@ -1,0 +1,42 @@
+/* invitations.css */
+/* Hero uses a Picsum background */
+.bg-hero{
+  background:linear-gradient(120deg, rgba(123,30,43,.65), rgba(201,162,39,.55)),
+             url('https://picsum.photos/1600/700?blur=1') center/cover no-repeat;
+}
+
+/* Package cards */
+.package-card .meta .fw-semibold{ font-size:1.05rem; }
+.package-card details summary{ cursor:pointer; }
+.package-card details[open] summary{ color:#6c757d; }
+
+/* Card hover */
+.package-card{
+  transition: transform .15s ease, box-shadow .15s ease;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: .75rem;
+}
+.package-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+
+/* Product images */
+.pkg-img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:.65rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+/* Buttons */
+.btn-primary{ background-color:#7b1e2b; border-color:#7b1e2b; }
+.btn-primary:hover{ filter:brightness(1.05); }
+.btn-outline-primary{ color:#7b1e2b; border-color:#7b1e2b; }
+.btn-outline-primary:hover{ background:#7b1e2b; color:#fff; }
+
+/* Comparison table */
+.compare-table th, .compare-table td{ text-align:center; }
+.compare-table th[scope="row"]{ text-align:left; }
+.compare-table tbody tr:nth-child(odd){ background:rgba(0,0,0,.015); }
