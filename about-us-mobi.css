@@ -1,24 +1,85 @@
-/* about-us-mobi.css */
+/* About page responsive refinements */
 
-/* Mobile adjustments for the Hero Section */
-@media (max-width: 576px) {
-    .hero {
-      height: 300px;
-    }
-    .hero-title {
-      font-size: 2rem;
-    }
+@media (max-width: 991.98px) {
+  .about-hero h1 {
+    font-size: 2.65rem;
   }
-  
-  /* Make social icons appear below the text in the footer on small screens */
-  @media (max-width: 576px) {
-    .footer-custom .container.d-flex {
-      flex-direction: column;
-      align-items: center;
-    }
-    .footer-custom .position-absolute.end-0.me-3 {
-      position: static !important;
-      margin-top: 0.5rem;
-    }
+
+  .section-title {
+    font-size: 2.15rem;
   }
-  
+
+  .about-hero__content {
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .value-grid,
+  .credential-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .final-cta__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-hero {
+    min-height: 430px;
+  }
+
+  .about-hero__shade {
+    background: linear-gradient(0deg, rgba(5, 12, 24, 0.92), rgba(5, 12, 24, 0.58));
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero__copy,
+  .lead-copy {
+    font-size: 1.03rem;
+  }
+
+  .about-hero__actions .btn,
+  .final-cta__actions .btn {
+    width: 100%;
+  }
+
+  .about-intro,
+  .founder-section,
+  .support-section,
+  .final-cta {
+    padding: 2.75rem 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .final-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .final-cta__inner {
+    padding: 1.5rem;
+  }
+
+  .footer-custom .container.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-custom .position-absolute.end-0.me-3 {
+    position: static !important;
+    margin-top: .5rem;
+  }
+}

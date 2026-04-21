@@ -1,32 +1,132 @@
-/* services-mobi.css */
+/* Services responsive refinements */
 
-/* Example media query for extra small screens */
-@media (max-width: 576px) {
-  .carousel-item {
-    height: 40vh !important; /* Increase from the default 50 or 65vh */
-  }
-  .carousel-item img,
-  .carousel-item svg {
-    object-fit: cover;
-    height: 100%;
+@media (max-width: 991.98px) {
+  .services-hero h1 {
+    font-size: 3.8rem;
   }
 
-  /* If needed, adjust caption spacing or font sizes */
-  .carousel-caption h1 {
-    font-size: 1.5rem;
+  .section-title {
+    font-size: 2.45rem;
   }
-  .carousel-caption p {
-    font-size: 1rem;
+
+  .final-cta h2 {
+    font-size: 2.25rem;
   }
+
+  .services-hero {
+    min-height: 680px;
   }
-/* Make social icons appear below the text in the footer on small screens */
-@media (max-width: 576px) {
+
+  .services-hero__content {
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-panel {
+    max-width: 560px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .final-cta__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .section-title {
+    font-size: 2.05rem;
+  }
+
+  .final-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .final-cta__inner {
+    padding: 1.5rem;
+  }
+
+  .services-hero {
+    min-height: 640px;
+  }
+
+  .services-hero__shade {
+    background: linear-gradient(0deg, rgba(5, 12, 24, 0.92), rgba(5, 12, 24, 0.58));
+  }
+
+  .hero-copy {
+    font-size: 1.05rem;
+  }
+
+  .hero-actions .btn,
+  .final-cta__actions .btn {
+    width: 100%;
+  }
+
+  .section-band,
+  .services-grid-section,
+  .digital-section,
+  .process-section,
+  .testimonial-section,
+  .final-cta {
+    padding: 3rem 0;
+  }
+
+  .service-search {
+    flex-wrap: wrap;
+  }
+
+  .service-search .input-group-text {
+    min-height: 54px;
+  }
+
+  .service-search .form-control {
+    flex: 1 1 calc(100% - 48px);
+  }
+
+  .service-search .btn {
+    flex: 1 1 100%;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .digital-card {
+    grid-template-columns: 1fr;
+  }
+
   .footer-custom .container.d-flex {
     flex-direction: column;
     align-items: center;
   }
+
   .footer-custom .position-absolute.end-0.me-3 {
     position: static !important;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .services-hero {
+    min-height: 700px;
+  }
+
+  .hero-panel div,
+  .service-card,
+  .digital-card,
+  .process-step,
+  .testimonial-card {
+    padding: 1rem;
   }
 }

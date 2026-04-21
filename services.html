@@ -4,434 +4,369 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chip-IT Services</title>
-  <!-- Bootstrap CSS (CDN) -->
+  <title>Services | Chip-IT</title>
+  <meta name="description" content="Explore Chip-IT services for computer repair, maintenance, data recovery, websites, online invitations, and local tech support." />
+  <meta name="theme-color" content="#0f79c0" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://chatling.ai" crossorigin />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="assets/css/site.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="services.css" />
-  <!-- Mobile-Specific CSS -->
   <link rel="stylesheet" href="services-mobi.css" />
-  <link rel="icon" type="x-icon" href="images/White-Logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/optimized/favicon-32.png" />
 </head>
 
-<body>
-  <!-- Navbar (same as Homepage, no search bar) -->
+<body class="services-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Primary navigation">
       <div class="container-fluid">
-        <!-- Brand -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/White-Logo.png" alt="Chip Icon" width="30" height="30" class="me-2" />
+          <picture class="me-2">
+            <source type="image/webp" srcset="images/optimized/White-Logo-64.webp 64w" />
+            <img src="images/optimized/White-Logo-64.png" alt="Chip-IT logo" width="30" height="30" decoding="async" />
+          </picture>
           <span>Chip-IT</span>
         </a>
 
-        <!-- Toggler for mobile view -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar Items -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <!-- Mark 'Services' as active link -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="quote.html">Quote</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Main Carousel Section -->
-  <main>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <img src="images/carousel/backup_01.png" class="d-block w-100" alt="Slide 1" />
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Data Backup and Recovery</h1>
-              <p>Ensure the safety and security of your critical data, whether for personal, professional, or academic
-                purposes.</p>
+  <main id="main">
+    <section class="services-hero">
+      <picture>
+        <source type="image/webp" srcset="images/optimized/complete_01-960.webp 960w, images/optimized/complete_01-1280.webp 1280w, images/optimized/complete_01-1920.webp 1920w" sizes="100vw" />
+        <source type="image/jpeg" srcset="images/optimized/complete_01-960.jpg 960w, images/optimized/complete_01-1280.jpg 1280w, images/optimized/complete_01-1920.jpg 1920w" sizes="100vw" />
+        <img src="images/optimized/complete_01-1280.jpg" alt="Computer repair workstation" width="1920" height="960" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="services-hero__shade"></div>
+      <div class="container services-hero__content">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-7 reveal">
+            <p class="eyebrow">Local IT support in Rio Bravo and El Cenizo</p>
+            <h1>Practical tech help, handled with care.</h1>
+            <p class="hero-copy">Repairs, troubleshooting, data recovery, maintenance, websites, and online invitations with clear pricing and straightforward communication.</p>
+            <div class="hero-actions">
+              <a href="quote.html" class="btn btn-primary btn-lg"><i class="bi bi-lightning-charge me-2"></i>Get a quote</a>
+              <a href="booking.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-2"></i>Book service</a>
             </div>
           </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <img src="images/carousel/cleaning_01.png" class="d-block w-100" alt="Slide 2" />
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Quick & Easy Cleaning</h1>
-              <p>Restore your computer to optimal performance with our thorough cleaning services.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <img src="images/carousel/complete_01.png" class="d-block w-100" alt="Slide 3" />
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>Exceptional Communication Solutions</h1>
-              <p>Contact us today for a prompt and professional diagnosis of your issues!</p>
+          <div class="col-lg-5 reveal">
+            <div class="hero-panel">
+              <div>
+                <span class="panel-label">Response</span>
+                <strong>24h typical</strong>
+              </div>
+              <div>
+                <span class="panel-label">Options</span>
+                <strong>Drop-off, remote, home visit</strong>
+              </div>
+              <div>
+                <span class="panel-label">Promise</span>
+                <strong>Estimate before work begins</strong>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    <section class="service-toolbar section-band">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 reveal">
+            <p class="eyebrow dark">Services</p>
+            <h2 class="section-title">Find the help you need</h2>
+            <p class="section-copy">Search by issue, device, or type of work. If you are not sure what is wrong, start with general troubleshooting.</p>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="service-search">
+              <span class="input-group-text" aria-hidden="true"><i class="bi bi-search"></i></span>
+              <input id="serviceSearch" class="form-control" type="search" placeholder="Search services, e.g. virus, backup, website" aria-label="Search services" />
+              <button id="serviceSearchClear" class="btn btn-outline-secondary" type="button" style="display:none;">Clear</button>
+            </div>
+            <small id="serviceSearchCount" class="text-muted d-block mt-2"></small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-grid-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="virus malware removal security cleanup infected computer">
+              <img src="images/icons/virus-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Security</span>
+                <h3>Virus and Malware Removal</h3>
+                <p>Threat scanning, cleanup, browser repair, and security recommendations to help protect your files and privacy.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$25 - $50</span>
+                <span><i class="bi bi-clock"></i>1 - 3 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="operating system reinstall update windows drivers software setup">
+              <img src="images/icons/system-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Systems</span>
+                <h3>OS Reinstall and Updates</h3>
+                <p>Clean reinstallations, updates, drivers, and essential software setup for a smoother, more reliable computer.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$30 - $100</span>
+                <span><i class="bi bi-clock"></i>2 - 4 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="data backup recovery files lost deleted hard drive transfer">
+              <img src="images/icons/data-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Data</span>
+                <h3>Data Backup and Recovery</h3>
+                <p>Help recovering important files, setting up backups, and transferring data between old and new devices.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$30 - $100+</span>
+                <span><i class="bi bi-clock"></i>2 - 10 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="hardware diagnostics repair screen parts computer no boot">
+              <img src="images/icons/hardware-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Repair</span>
+                <h3>Hardware Diagnostics and Repair</h3>
+                <p>Issue diagnosis, component checks, replacement guidance, and repair planning before any parts are ordered.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$50 - $250+</span>
+                <span><i class="bi bi-clock"></i>1 - 5 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="cleaning maintenance tune up overheating thermal paste dust slow computer">
+              <img src="images/icons/cleaning-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Performance</span>
+                <h3>System Cleaning and Maintenance</h3>
+                <p>Dust removal, thermal paste service, startup cleanup, and tune-ups for slow or overheating computers.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$25 - $100</span>
+                <span><i class="bi bi-clock"></i>1 - 2 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 d-flex">
+            <article class="service-card reveal" data-service-card data-search="software troubleshooting crashes installation errors office adobe apps">
+              <img src="images/icons/troubleshoot-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div class="service-card__body">
+                <span class="service-tag">Software</span>
+                <h3>Software Troubleshooting</h3>
+                <p>Crashes, installation problems, app configuration, compatibility issues, and general software support.</p>
+              </div>
+              <div class="service-meta">
+                <span><i class="bi bi-cash-coin"></i>$50 - $120+</span>
+                <span><i class="bi bi-clock"></i>1 - 3 hours</span>
+              </div>
+              <a href="booking.html" class="service-link">Request help <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="digital-section">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-4">
+          <div class="col-lg-7 reveal">
+            <p class="eyebrow dark">Digital work</p>
+            <h2 class="section-title">Websites and online invitations</h2>
+            <p class="section-copy">Simple, polished digital experiences for small businesses, personal projects, portfolios, events, and QR-code invitations.</p>
+          </div>
+          <div class="col-lg-5 text-lg-end reveal">
+            <a href="portfolio.html" class="btn btn-outline-primary"><i class="bi bi-briefcase me-2"></i>View work</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 d-flex">
+            <article class="digital-card reveal" data-service-card data-search="website development small business portfolio personal informational page">
+              <img src="images/icons/website-new-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div>
+                <span class="service-tag">Web</span>
+                <h3>Website Development</h3>
+                <p>Starter websites built with HTML, CSS, and JavaScript for small businesses, portfolios, informational pages, and custom digital projects.</p>
+                <div class="service-meta">
+                  <span><i class="bi bi-cash-coin"></i>$50 - $150+</span>
+                  <span><i class="bi bi-clock"></i>2 - 5 days</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <a href="booking.html" class="btn btn-primary">Start project</a>
+                  <a href="https://dbanda99.github.io/Open-Up/arrival-page.html" class="btn btn-outline-primary">See example</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <article class="digital-card reveal" data-service-card data-search="online invitations wedding party event qr code pdf invitation website">
+              <img src="images/icons/invitation-new-icon-140.webp" alt="" width="86" height="86" loading="lazy" decoding="async" />
+              <div>
+                <span class="service-tag">Events</span>
+                <h3>Online Invitations</h3>
+                <p>Custom invitation pages, PDF invitations, RSVP-friendly concepts, and QR-code options for parties, weddings, and special events.</p>
+                <div class="service-meta">
+                  <span><i class="bi bi-cash-coin"></i>$25 - $100+</span>
+                  <span><i class="bi bi-clock"></i>5 hours - 3 days</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <a href="invitations.html" class="btn btn-primary">Explore invitations</a>
+                  <a href="booking.html" class="btn btn-outline-primary">Ask a question</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 reveal">
+            <p class="eyebrow dark">How it works</p>
+            <h2 class="section-title">Clear steps, no surprise work.</h2>
+            <p class="section-copy">You get a plain-language diagnosis and an estimate before the repair or project moves forward.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="process-grid">
+              <div class="process-step reveal">
+                <span>01</span>
+                <h3>Tell me what is happening</h3>
+                <p>Send a note, quote request, or booking request with the issue and device details.</p>
+              </div>
+              <div class="process-step reveal">
+                <span>02</span>
+                <h3>Get an estimate</h3>
+                <p>I review the symptoms, service type, urgency, and visit option before work begins.</p>
+              </div>
+              <div class="process-step reveal">
+                <span>03</span>
+                <h3>Approve the work</h3>
+                <p>You confirm the plan, then I handle the repair, setup, cleanup, or digital build.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-4">
+          <div class="col-lg-7 reveal">
+            <p class="eyebrow dark">Testimonials</p>
+            <h2 class="section-title">Trusted by local customers</h2>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>David is patient, professional, and careful with every computer he repairs, assembles, cleans, or explains.</blockquote>
+              <figcaption>
+                <strong>Fernanda Ochoa Castellanos</strong>
+                <span>Laredo, Texas</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>He is tech savvy, enjoys helping people, and is a great person to have around when your computer has issues.</blockquote>
+              <figcaption>
+                <strong>David Garcia</strong>
+                <span>Laredo, Texas</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>David is responsible, understanding, and knowledgeable about both programming and computer repair.</blockquote>
+              <figcaption>
+                <strong>Andre Linhares</strong>
+                <span>Laredo, Texas</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta__inner reveal">
+          <div>
+            <p class="eyebrow">Ready when you are</p>
+            <h2>Need help choosing the right service?</h2>
+            <p>Start with a quote or booking request and I will help narrow down the best next step.</p>
+          </div>
+          <div class="final-cta__actions">
+            <a href="quote.html" class="btn btn-light btn-lg"><i class="bi bi-lightning-charge me-2"></i>Instant quote</a>
+            <a href="booking.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-2"></i>Book Chip-IT</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Our Services Section -->
-  <div class="container my-5">
-    <!-- Title: Our Services -->
-    <div class="row mb-4">
-      <div class="col-12 p-5 text-center">
-        <h2 class="fw-bold">Our Services</h2>
-      </div>
-    </div>
-
-    <!-- Row 1: Services 1-3 -->
-    <div class="row mb-4">
-      <!-- Service 1 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/virus-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Virus and Malware Removal" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Virus and Malware Removal</h5>
-            <p class="card-text">
-              Our expert team specializes in removing computer viruses and
-              malware to ensure your system is secure. We protect your data
-              and privacy by thoroughly scanning and eliminating threats,
-              providing you with peace of mind and a safe computing
-              environment.<br />
-              <strong>Price:</strong> $25 - $50 <br />
-              <strong>Estimated Time:</strong> 1 - 3 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-      <!-- Service 2 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/system-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Operating System Reinstall/Update" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Operating System Reinstall/Update</h5>
-            <p class="card-text">
-              Keep your computer running smoothly and efficiently. We handle
-              the complete reinstallation or updating of your OS, including
-              driver and software installations.<br />
-              <strong>Price Range:</strong> $30 - $100<br />
-              <strong>Estimated Time:</strong> 2 - 4 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-      <!-- Service 3 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/data-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Data Backup and Recovery" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Data Backup and Recovery</h5>
-            <p class="card-text">
-              We provide comprehensive solutions for backing up your data and
-              recovering lost files due to hardware failures or accidental
-              deletions.<br />
-              <strong>Price Range:</strong> $30 - $100+<br />
-              <strong>Estimated Time:</strong> 2 - 10 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 2: Services 4-6 -->
-    <div class="row mb-4">
-      <!-- Service 4 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/hardware-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Hardware Diagnostics and Repair" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Hardware Diagnostics and Repair</h5>
-            <p class="card-text">
-              We identify and resolve hardware issues through thorough
-              diagnostics and necessary repairs or component replacements.<br />
-              <strong>Price Range:</strong> $50 - $250+<br />
-              <strong>Estimated Time:</strong> 1 - 5 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-      <!-- Service 5 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/cleaning-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="System Cleaning and Maintenance" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">System Cleaning and Maintenance</h5>
-            <p class="card-text">
-              We remove dust, apply thermal paste, and perform software
-              cleanup to improve performance and prevent overheating.<br />
-              <strong>Price Range:</strong> $25 - $100<br />
-              <strong>Estimated Time:</strong> 1 - 2 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-      <!-- Service 6 -->
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/troubleshoot-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Software Troubleshooting" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Software Troubleshooting</h5>
-            <p class="card-text">
-              We fix crashes, installation errors, and compatibility issues
-              for various software (Office, Adobe, etc.).<br />
-              <strong>Price Range:</strong> $50 - $120+<br />
-              <strong>Estimated Time:</strong> 1 - 3 hours
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 p-5 text-center">
-      <h2 class="fw-bold">Digital Services</h2>
-    </div>
-    <!-- Row 3: Service 7 -->
-    <div class="row mb-5">
-      <div class="col-lg-4 d-flex align-items-stretch mb-4">
-        <div class="card service-card w-100">
-          <img src="images/website-new-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Network & Connectivity Troubleshoot" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Website Development</h5>
-            <p class="card-text">
-              We can discuss the creation of your own simple website.
-              This website will be developed using HTML 5, CSS, and Java.
-              Websites are the most common for:<br />
-              -Small Business <br />
-              -Personal Use <br />
-              -Portfolio <br />
-              -Invitations <br />
-              -Informational <br />
-              -And more! <br />
-              Contact us today! Get a FREE quote! <br />
-              <br />
-              <strong>Price Range:</strong> $50 - $150+ [Depends on complexity.]<br />
-              <strong>Estimated Time:</strong> 2 - 5 days [According to complexity.]
-            </p>
-            <a href="contact.html" class="btn btn-primary">View details &raquo;</a>
-            <a href="https://dbanda99.github.io/Open-Up/arrival-page.html" class="btn btn-secondary">Example &raquo;</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 3: Service 8 -->
-
-      <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card service-card w-100">
-          <img src="images/invitation-new-icon.png" class="card-img-top mx-auto d-block mt-3 rounded-circle"
-            alt="Network & Connectivity Troubleshoot" style="width: 140px; height: 140px;" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Online Invitations</h5>
-            <p class="card-text">
-              Allow us to assist you in creating a unique and trendsetting invitation experience for your special
-              occasion. Whether it's a party or a wedding, we are here to help. We will collaborate with you to
-              determine the most effective approach for your guests. From developing a personalized website for your
-              invitations to creating a PDF invitation with a QR code, we offer a range of innovative solutions to suit
-              your needs.<br />
-              <br />
-              <strong>Price Range:</strong> $25 - $100+<br />
-              <strong>Estimated Time:</strong> 5 hours - 3 days [According to complexity.]
-            </p>
-            <a href="invitations.html" class="btn btn-primary">View details &raquo;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <hr class="featurette-divider" />
-
-    <!-- Title: Reviews -->
-    <div class="row mb-4">
-      <div class="col-12 p-lg-5 text-center">
-        <h2 class="fw-bold">Testimonials</h2>
-      </div>
-    </div>
-
-    <!-- 3 Placeholders with Text (Featurette Sections) -->
-    <!-- Featurette 1 -->
-    <div class="row featurette mb-5">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          Fernanda
-          <span class="text-muted">Ochoa Castellanos:</span>
-        </h2>
-        <p class="lead">
-          Confíe en que sus equipos están en las mejores manos. Nuestro ingeniero David Banda cuenta con amplia
-          experiencia en el sector tecnológico y se actualiza constantemente para garantizar que sus computadoras
-          siempre estén al día. 💻🔧
-
-          Como podemos observar, nuestros dispositivos se modernizan diariamente. Si necesita asistencia, no dude en
-          contactar a nuestro ingeniero, quien atenderá su domicilio de manera rápida y eficiente. 📞🏠
-
-          David Banda se destaca por su gran paciencia y profesionalismo al reparar, ensamblar, desarmar y limpiar
-          computadoras, ofreciendo un servicio integral de alta calidad. ✅🤝
-
-          Ningún otro profesional en el área ofrece servicio a domicilio, y nadie está más capacitado que nuestro
-          ingeniero David Banda. Contáctelo sin dudar y experimente la diferencia de un servicio verdaderamente
-          profesional. 💼🔝
-        </p>
-        <p>
-          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (5)
-        </p>
-
-        <p>
-          Laredo, Texas
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img src="images/testi_03.png"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350" height="450"
-          alt="Featurette 1" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-
-    <!-- Featurette 2 (reverse order on md+) -->
-    <div class="row featurette mb-5">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">
-          David
-          <span class="text-muted">Garcia</span>
-        </h2>
-        <p class="lead">
-        <p class="lead">
-          I have known David for a quite time now. And he is a tech savvy, and enjoys to help out anyone with problems.
-          I have lived in El Cenizo all my life, and
-          I know it because hard to go to Laredo, especially for Comptuer Check-ups. David is a great person to have
-          around, and he is very professional.
-          If you have any issues with your computer, I would recommend him.
-        </p>
-        <p>
-          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (5)
-        </p>
-
-        <p>
-          Laredo, Texas
-        </p>
-        </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="images/testi_02.png"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="450"
-          alt="Featurette 2" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-
-    <!-- Featurette 3 -->
-    <div class="row featurette mb-5">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          Andre
-          <span class="text-muted">Linhares</span>
-        </h2>
-        <p class="lead">
-        <p class="lead">
-          I have met David in Czech Republic, and we studied together in the same class of programming. David is
-          understanding, and he is very good at what he does.
-          Other than knowing how to program, he has a vast knowledge of computer repair. I would recommend him to anyone
-          who needs help with their computer.
-          David is very responsible, and even though I do not live close to him, I would wish to have him around to help
-          me around with my computer. I do recommend him
-          at 100%. If you have still doubts, make sure to contact him directly!.
-        </p>
-        <p>
-          Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> (5)
-        </p>
-
-        <p>
-          Laredo, Texas
-        </p>
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img src="images/testi_01.png"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350" height="450"
-          alt="Featurette 3" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
   <footer class="bg-dark py-3 footer-custom">
     <div class="container d-flex align-items-center position-relative">
-      <!-- Centered Text -->
       <p class="mb-0 text-white w-100 text-center">
-        Copyright &copy; 2025 - David Banda
+        Copyright &copy; <span data-current-year>2025</span> - David Banda
       </p>
-      <!-- Social Icons on the Right -->
       <div class="position-absolute end-0 me-3 social-icons">
-        <!-- Facebook -->
         <a href="https://www.facebook.com/profile.php?id=61574150940398" class="text-white mx-1" aria-label="Facebook">
           <i class="bi bi-facebook"></i>
         </a>
-        <!-- Instagram -->
         <a href="https://www.instagram.com/officialchipit?igsh=MXUwenYzZWJueGJ4eg%3D%3D&utm_source=qr"
           class="text-white mx-1" aria-label="Instagram">
           <i class="bi bi-instagram"></i>
         </a>
-        <!-- X (formerly Twitter) -->
-
-        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/davidbanda89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           class="text-white mx-1" aria-label="LinkedIn">
           <i class="bi bi-linkedin"></i>
@@ -440,13 +375,10 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS (CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="services.js"></script>
-  <script> window.chtlConfig = { chatbotId: "7741564378" } </script>
-  <script async data-id="7741564378" id="chatling-embed-script" type="text/javascript"
-    src="https://chatling.ai/js/embed.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="services.js"></script>
+  <script defer src="assets/js/services-page.js"></script>
+  <script defer src="assets/js/site.js"></script>
 </body>
 
 </html>

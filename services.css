@@ -1,76 +1,388 @@
-/* services.css */
+/* Services page */
 
-/* Adjust any general carousel or page styling here */
-.carousel-item {
-  height: 65vh;
-  /* Example: set a fixed height for the carousel */
-  min-height: 400px;
-  /* fallback for very small screens */
+.services-page {
+  background: #f5f7fb;
 }
 
-/* Scale and center the placeholder SVG (or background image) */
-.carousel-item svg {
+.services-page .navbar-dark .navbar-nav .nav-link:hover {
+  color: #cfe9fb;
+}
+
+.services-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: stretch;
+}
+
+.services-hero picture,
+.services-hero img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+}
+
+.services-hero img {
   object-fit: cover;
 }
 
-/* Navbar links hover effect (optional) */
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #bbb;
+.services-hero__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 12, 24, 0.92) 0%, rgba(5, 12, 24, 0.74) 46%, rgba(5, 12, 24, 0.35) 100%),
+    linear-gradient(0deg, rgba(5, 12, 24, 0.55), rgba(5, 12, 24, 0.08));
 }
 
-/* Remove underscores or text decorations from links */
+.services-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.eyebrow {
+  margin: 0 0 .75rem;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #9bd7ff;
+}
+
+.eyebrow.dark {
+  color: #0f79c0;
+}
+
+.services-hero h1 {
+  max-width: 780px;
+  font-size: 5.1rem;
+  line-height: .96;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin: 1.25rem 0 0;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.75rem;
+}
+
+.hero-panel {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 1.1rem;
+  display: grid;
+  gap: .75rem;
+  border-radius: .5rem;
+}
+
+.hero-panel div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: .45rem;
+  padding: 1rem;
+}
+
+.panel-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: .78rem;
+  margin-bottom: .18rem;
+}
+
+.hero-panel strong {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.section-band,
+.services-grid-section,
+.digital-section,
+.process-section,
+.testimonial-section,
+.final-cta {
+  padding: 4.5rem 0;
+}
+
+.service-toolbar {
+  background: #fff;
+}
+
+.section-title {
+  margin: 0;
+  color: #09111f;
+  font-size: 3rem;
+  line-height: 1.05;
+  font-weight: 820;
+}
+
+.section-copy {
+  max-width: 720px;
+  color: #657084;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: .9rem 0 0;
+}
+
+.service-search {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid rgba(15, 121, 192, 0.22);
+  border-radius: .5rem;
+  box-shadow: 0 18px 45px rgba(10, 22, 44, 0.08);
+  overflow: hidden;
+}
+
+.service-search .input-group-text,
+.service-search .form-control,
+.service-search .btn {
+  border: 0;
+  border-radius: 0;
+}
+
+.service-search .input-group-text {
+  background: #fff;
+  color: #0f79c0;
+}
+
+.service-search .form-control {
+  min-height: 54px;
+  box-shadow: none;
+}
+
+.services-grid-section {
+  background: #f5f7fb;
+}
+
+.service-card,
+.digital-card,
+.process-step,
+.testimonial-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: .5rem;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.service-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.service-card:hover,
+.digital-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(15, 121, 192, 0.34);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.13);
+}
+
+.service-card img,
+.digital-card img {
+  width: 86px;
+  height: 86px;
+  border-radius: .45rem;
+  object-fit: cover;
+  background: #eef7fd;
+  padding: .35rem;
+}
+
+.service-card__body {
+  flex: 1;
+}
+
+.service-tag {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.1rem;
+  margin-bottom: .6rem;
+  color: #0b5d95;
+  background: #e8f5fd;
+  border: 1px solid rgba(15, 121, 192, 0.16);
+  border-radius: 999px;
+  padding: .25rem .65rem;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.service-card h3,
+.digital-card h3,
+.process-step h3 {
+  color: #09111f;
+  font-size: 1.24rem;
+  line-height: 1.25;
+  font-weight: 800;
+  margin: 0 0 .65rem;
+}
+
+.service-card p,
+.digital-card p,
+.process-step p {
+  color: #657084;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.service-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin-top: 1.1rem;
+}
+
+.service-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  color: #263244;
+  background: #f3f7fb;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: .45rem;
+  padding: .48rem .62rem;
+  font-size: .88rem;
+  font-weight: 750;
+}
+
+.service-meta i {
+  color: #0f79c0;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+  width: fit-content;
+  margin-top: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.digital-section,
+.testimonial-section {
+  background: #fff;
+}
+
+.digital-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.15rem;
+  padding: 1.45rem;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.digital-card .service-tag {
+  margin-top: 0;
+}
+
+.process-section {
+  background: #eef4f9;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-step {
+  padding: 1.25rem;
+}
+
+.process-step span {
+  display: inline-flex;
+  color: #0f79c0;
+  font-weight: 850;
+  margin-bottom: .8rem;
+}
+
+.testimonial-card {
+  padding: 1.4rem;
+  margin: 0;
+}
+
+.testimonial-card blockquote {
+  color: #263244;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 1.25rem;
+}
+
+.testimonial-card figcaption {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding-top: 1rem;
+}
+
+.testimonial-card strong,
+.testimonial-card span {
+  display: block;
+}
+
+.testimonial-card span {
+  color: #657084;
+  font-size: .92rem;
+  margin-top: .2rem;
+}
+
+.final-cta {
+  background: #fff;
+}
+
+.final-cta__inner {
+  background:
+    linear-gradient(135deg, rgba(15, 121, 192, 0.98), rgba(8, 42, 72, 0.98)),
+    url("images/optimized/backup_01-1280.jpg") center / cover;
+  color: #fff;
+  border-radius: .5rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 22px 70px rgba(9, 17, 31, 0.22);
+}
+
+.final-cta h2 {
+  margin: 0;
+  font-weight: 840;
+  font-size: 2.7rem;
+}
+
+.final-cta p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.82);
+  margin: .75rem 0 0;
+  max-width: 620px;
+}
+
+.final-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .75rem;
+}
+
 .social-icons a {
   text-decoration: none !important;
 }
-
-/* Optional hover/focus state with no underline */
-.social-icons a:hover,
-.social-icons a:focus {
-  text-decoration: none !important;
-}
-
-/* Footer styling if needed */
-.footer-custom {
-  position: relative;
-}
-
-/* services.css */
-
-/* Elevate the card on hover */
-.service-card {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* services.css */
-
-/* Change carousel caption text color */
-.carousel-caption h1 {
-  color: #ffffff; /* or any color you prefer */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.911); /* optional for better readability */
-}
-
-.carousel-caption p {
-  color: #ffffff; /* or any color you prefer */
-  text-shadow: 1px 1px 3px rgb(0, 0, 0); /* optional for better readability */
-}
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* black, 50% opacity */
-  display: inline-block; /* or block, depending on your design */
-  border-radius: 0.25rem; /* optional rounding */
-  padding: 1rem; /* optional padding */
-  width: auto; /* or any width you prefer */
-}
-
-
-/* services.css */
-
-/* Make carousel images fill the width but maintain aspect ratio */
-

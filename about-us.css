@@ -1,86 +1,299 @@
-/* about-us.css */
+/* About page */
 
-/* Hero Section Styles */
-.hero {
-  background: url('https://picsum.photos/1920/600?random=20') center center/cover no-repeat;
-  height: 600px;
-  position: relative;
+.about-page {
+  background: #f6f8fb;
 }
 
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
+.about-page .navbar-dark .navbar-nav .nav-link:hover {
+  color: #cfe9fb;
+}
+
+.about-hero {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  color: #fff;
   display: flex;
+  align-items: stretch;
+}
+
+.about-hero picture,
+.about-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-hero img {
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.about-hero__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 12, 24, 0.96), rgba(5, 22, 40, 0.82) 56%, rgba(5, 22, 40, 0.48)),
+    linear-gradient(0deg, rgba(5, 12, 24, 0.36), rgba(5, 12, 24, 0.04));
+}
+
+.about-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  padding-top: 3.25rem;
+  padding-bottom: 3rem;
+}
+
+.about-eyebrow {
+  margin: 0 0 .75rem;
+  color: #9bd7ff;
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.about-eyebrow.dark {
+  color: #0f79c0;
+}
+
+.about-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 1.04;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.about-hero__copy {
+  max-width: 680px;
+  margin: .95rem 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.about-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.35rem;
+}
+
+.about-intro,
+.founder-section,
+.support-section,
+.final-cta {
+  padding: 4rem 0;
+}
+
+.about-intro,
+.support-section {
+  background: #fff;
+}
+
+.section-title {
+  margin: 0;
+  color: #09111f;
+  font-size: 2.45rem;
+  line-height: 1.08;
+  font-weight: 850;
+}
+
+.lead-copy,
+.section-copy {
+  color: #5f6d80;
+  line-height: 1.75;
+}
+
+.lead-copy {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.section-copy {
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.value-card,
+.assistant-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: .5rem;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.07);
+}
+
+.value-card {
+  padding: 1.35rem;
+}
+
+.value-card i {
+  display: inline-flex;
+  width: 2.8rem;
+  height: 2.8rem;
   align-items: center;
   justify-content: center;
-}
-
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-/* Main Content Spacing */
-.container.my-5 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-/* Remove underscores or text decorations from links */
-.social-icons a {
-  text-decoration: none !important;
-}
-
-/* Optional hover/focus state with no underline */
-.social-icons a:hover,
-.social-icons a:focus {
-  text-decoration: none !important;
-}
-
-/* Footer styling if needed */
-.footer-custom {
-  position: relative;
-}
-
-/* ------------------- */
-/* TEAM CARD STYLES    */
-/* ------------------- */
-.team-card {
-  /* Border and radius to mimic the rounded rectangle look */
-  border: 2px solid #ddd;
-  border-radius: 30px;
-  background-color: #fff;
-
-  /* Sizing and spacing */
-  max-width: 300px;
-  margin: 0 auto; /* Center horizontally */
-  padding: 1.5rem;
-  text-align: center;
-
-  /* A subtle box-shadow to elevate the card */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.team-card img {
-  /* Make the profile image circular */
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-
-  /* Space between image and text */
+  color: #0f79c0;
+  background: #e8f5fd;
+  border-radius: .45rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.team-card h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: bold;
+.value-card h3,
+.assistant-card h3 {
+  color: #09111f;
+  font-size: 1.18rem;
+  font-weight: 850;
+  margin: 0 0 .55rem;
 }
 
-.team-card p {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #333;
+.value-card p,
+.assistant-card p {
+  color: #5f6d80;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.founder-section {
+  background: #f4f7fb;
+}
+
+.founder-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: .5rem;
+  background: #e8f5fd;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+}
+
+.founder-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: 1.5rem;
+}
+
+.credential-grid div {
+  min-height: 92px;
+  padding: .9rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: .45rem;
+}
+
+.credential-grid span {
+  display: block;
+  color: #0f79c0;
+  font-size: .78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  margin-bottom: .3rem;
+}
+
+.credential-grid strong {
+  display: block;
+  color: #09111f;
+  line-height: 1.35;
+}
+
+.service-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1.5rem;
+}
+
+.service-pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: #263244;
+  background: #f4f8fb;
+  border: 1px solid rgba(15, 121, 192, 0.16);
+  border-radius: 999px;
+  padding: .55rem .75rem;
+  font-weight: 760;
+}
+
+.service-pills i {
+  color: #0f79c0;
+}
+
+.assistant-card {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.assistant-card picture {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.assistant-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.final-cta {
+  background: #fff;
+}
+
+.final-cta__inner {
+  background:
+    linear-gradient(135deg, rgba(15, 121, 192, 0.98), rgba(8, 42, 72, 0.98)),
+    url("images/optimized/complete_01-1280.jpg") center / cover;
+  color: #fff;
+  border-radius: .5rem;
+  padding: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 22px 70px rgba(9, 17, 31, 0.22);
+}
+
+.final-cta h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 850;
+  line-height: 1.05;
+}
+
+.final-cta p:not(.about-eyebrow) {
+  max-width: 620px;
+  margin: .75rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.final-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .75rem;
+}
+
+.social-icons a {
+  text-decoration: none !important;
 }

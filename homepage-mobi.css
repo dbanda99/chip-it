@@ -1,20 +1,104 @@
-/* homepage-mobi.css */
+/* Homepage responsive refinements */
 
-/* Example: Adjust main heading and spacing on very small screens */
-@media (max-width: 576px) {
-  main h1 {
-    font-size: 2rem;
+@media (max-width: 991.98px) {
+  .home-hero {
+    min-height: 780px;
   }
 
-  main p.lead {
-    font-size: 1rem;
+  .home-hero h1 {
+    font-size: 3.45rem;
   }
 
-  .navbar-brand span {
-    font-size: 1rem;
+  .section-heading h2,
+  .section-title {
+    font-size: 2.25rem;
   }
 
-  .navbar-nav .nav-link {
-    padding: 0.5rem 1rem;
+  .home-hero__content {
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-action-panel {
+    max-width: 560px;
+  }
+
+  .process-grid,
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .final-cta__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-hero {
+    min-height: 760px;
+  }
+
+  .home-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .home-hero__copy {
+    font-size: 1.03rem;
+  }
+
+  .home-hero__actions .btn,
+  .final-cta__actions .btn {
+    width: 100%;
+  }
+
+  .home-proof {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-section {
+    padding: 3rem 0;
+  }
+
+  .section-heading h2,
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .trust-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-action {
+    align-items: flex-start;
+    padding: .85rem;
+  }
+
+  .hero-action-panel {
+    padding: .75rem;
+  }
+
+  .final-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .final-cta__inner {
+    padding: 1.5rem;
+  }
+
+  .footer-custom .container.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-custom .position-absolute.end-0.me-3 {
+    position: static !important;
+    margin-top: .5rem;
   }
 }

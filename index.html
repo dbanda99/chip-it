@@ -1,96 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chip-IT</title>
-  <!-- Bootstrap CSS (CDN) -->
+  <meta name="description" content="Chip-IT offers fast, reliable IT support in Rio Bravo and El Cenizo. Repairs, maintenance, troubleshooting, websites, and online invitations." />
+  <meta name="theme-color" content="#0f79c0" />
+  <title>Chip-IT | IT Services & Support</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://chatling.ai" crossorigin />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
   <link rel="stylesheet" href="homepage.css" />
-  <!-- Mobile-Specific CSS -->
   <link rel="stylesheet" href="homepage-mobi.css" />
-  <link rel="icon" type="x-icon" href="images/White-Logo.png" />
-
+  <link rel="icon" type="image/png" sizes="32x32" href="images/optimized/favicon-32.png" />
 </head>
 
-<body>
-  <!-- Video Background -->
-  <!-- Replace 'video-bg.mp4' with your own video file path or URL -->
-  <video class="video-background" autoplay muted loop playsinline id="bgVideo">
+<body class="homepage">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <video class="video-background" autoplay muted loop playsinline id="bgVideo"
+         preload="metadata"
+         poster="images/optimized/computer-fix-poster-1280.jpg">
     <source src="videos/computer-fix.mp4" type="video/mp4" />
-    <!-- Fallback text if the video cannot be played -->
     Your browser does not support HTML5 video.
   </video>
 
-  <!-- Cover Container -->
-  <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Primary navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <picture class="me-2">
+            <source type="image/webp" srcset="images/optimized/White-Logo-64.webp 64w" />
+            <img src="images/optimized/White-Logo-64.png" width="30" height="30" alt="Chip-IT logo" decoding="async" />
+          </picture>
+          <span>Chip-IT</span>
+        </a>
 
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Brand -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <!-- Example icon (optional). You can remove or replace with your own logo -->
-            <img src="images/White-Logo.png" alt="Chip Icon" width="30" height="30" class="me-2" />
-            <span>Chip-IT</span>
-          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Toggler for mobile view -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="quote.html">Quote</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-          <!-- Navbar Items -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+  <main id="main">
+    <section class="home-hero">
+      <div class="home-hero__shade"></div>
+      <div class="container home-hero__content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 reveal">
+            <p class="home-eyebrow">Local IT support in Rio Bravo and El Cenizo</p>
+            <h1>Tech help that gets you back to work.</h1>
+            <p class="home-hero__copy">Repairs, tune-ups, data recovery, troubleshooting, websites, and online invitations with clear estimates and careful service.</p>
+            <div class="home-hero__actions">
+              <a href="quote.html" class="btn btn-primary btn-lg"><i class="bi bi-lightning-charge me-2"></i>Get instant quote</a>
+              <a href="booking.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-2"></i>Book support</a>
+            </div>
+            <div class="home-proof">
+              <span><i class="bi bi-shield-check"></i> Privacy-minded</span>
+              <span><i class="bi bi-clock-history"></i> 24h typical response</span>
+              <span><i class="bi bi-geo-alt"></i> Local service</span>
+            </div>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="hero-action-panel">
+              <div class="panel-brand">
+                <picture>
+                  <source type="image/webp" srcset="images/optimized/White-Logo-128.webp 128w" />
+                  <img src="images/optimized/White-Logo-128.png" alt="" width="58" height="58" decoding="async" />
+                </picture>
+                <div>
+                  <span>Chip-IT</span>
+                  <strong>Choose your fastest next step</strong>
+                </div>
+              </div>
+              <a href="quote.html" class="panel-action">
+                <i class="bi bi-calculator"></i>
+                <span>
+                  <strong>Estimate a repair</strong>
+                  <small>Price range and ETA</small>
+                </span>
+              </a>
+              <a href="booking.html" class="panel-action">
+                <i class="bi bi-calendar2-check"></i>
+                <span>
+                  <strong>Reserve a time</strong>
+                  <small>Drop-off, home visit, or remote</small>
+                </span>
+              </a>
+              <a href="services.html" class="panel-action">
+                <i class="bi bi-tools"></i>
+                <span>
+                  <strong>Browse services</strong>
+                  <small>Repair, support, and digital work</small>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="px-3 text-center my-auto">
-      <img src="images/White-Logo.png" alt="Chip-IT Logo" class="d-block mx-auto mb-4" width="250" height="250"/>
-      <h1>Welcome to Chip-IT</h1>
-      <p class="lead">
-        Your one-stop solution for all IT services.
+    <section class="home-section service-preview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="home-eyebrow dark">Services</p>
+          <h2>Support for the issues that slow you down.</h2>
+          <p>From urgent repairs to small digital projects, Chip-IT keeps the process clear and practical.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3 d-flex">
+            <a class="service-card reveal" href="services.html">
+              <img src="images/icons/troubleshoot-icon-140.webp" alt="" width="70" height="70" loading="lazy" decoding="async" />
+              <h3>Troubleshooting</h3>
+              <p>Startup issues, errors, crashes, slow systems, and confusing symptoms.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex">
+            <a class="service-card reveal" href="services.html">
+              <img src="images/icons/cleaning-icon-140.webp" alt="" width="70" height="70" loading="lazy" decoding="async" />
+              <h3>Maintenance</h3>
+              <p>Deep cleaning, tune-ups, overheating support, and performance cleanup.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex">
+            <a class="service-card reveal" href="services.html">
+              <img src="images/icons/data-icon-140.webp" alt="" width="70" height="70" loading="lazy" decoding="async" />
+              <h3>Data Help</h3>
+              <p>Backup setup, file transfer, and recovery help for important files.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex">
+            <a class="service-card reveal" href="services.html">
+              <img src="images/icons/website-new-icon-140.webp" alt="" width="70" height="70" loading="lazy" decoding="async" />
+              <h3>Digital Work</h3>
+              <p>Starter websites, online invitations, QR code flows, and simple web tools.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" class="home-section trust-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <p class="home-eyebrow dark">Why Chip-IT</p>
+            <h2 class="section-title">Professional help without the runaround.</h2>
+            <p class="section-copy">You get plain-language communication, careful data handling, and an estimate before work begins.</p>
+            <div class="trust-stats">
+              <div>
+                <strong>24h</strong>
+                <span>Typical response</span>
+              </div>
+              <div>
+                <strong>Local</strong>
+                <span>Rio Bravo and El Cenizo</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="trust-grid">
+              <div class="trust-item reveal">
+                <i class="bi bi-shield-lock"></i>
+                <h3>Secure handling</h3>
+                <p>Privacy-minded support for your device, accounts, files, and personal data.</p>
+              </div>
+              <div class="trust-item reveal">
+                <i class="bi bi-receipt"></i>
+                <h3>Transparent pricing</h3>
+                <p>Use the quote estimator and approve the plan before repair work begins.</p>
+              </div>
+              <div class="trust-item reveal">
+                <i class="bi bi-house-check"></i>
+                <h3>Flexible support</h3>
+                <p>Drop-off, home visit, and remote support options depending on the issue.</p>
+              </div>
+              <div class="trust-item reveal">
+                <i class="bi bi-code-slash"></i>
+                <h3>Repair plus digital</h3>
+                <p>Computer support, websites, online invitations, and simple digital tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section process-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="home-eyebrow dark">How it works</p>
+          <h2>Simple steps from issue to solution.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span>01</span>
+            <h3>Describe the issue</h3>
+            <p>Start with a quote, booking, or message and include the device details.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>02</span>
+            <h3>Confirm the plan</h3>
+            <p>Chip-IT reviews the symptoms, timing, and support type before work starts.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>03</span>
+            <h3>Get back online</h3>
+            <p>Your repair, setup, cleanup, or digital project is handled with clear updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="home-section testimonial-section">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-4">
+          <div class="col-lg-7 reveal">
+            <p class="home-eyebrow dark">Customer notes</p>
+            <h2 class="section-title">Clear, patient, and practical.</h2>
+          </div>
+          <div class="col-lg-5 text-lg-end reveal">
+            <a href="portfolio.html" class="btn btn-outline-primary"><i class="bi bi-briefcase me-2"></i>See work</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>My laptop was extremely slow. Chip-IT cleaned it up and it feels brand new.</blockquote>
+              <figcaption>Performance tune-up</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>He recovered my files and set up backups so this will not happen again.</blockquote>
+              <figcaption>Data recovery and backup setup</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <figure class="testimonial-card reveal">
+              <blockquote>Booked online, got a clear quote, and everything was fixed on time.</blockquote>
+              <figcaption>Booking and repair</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section final-cta">
+      <div class="container">
+        <div class="final-cta__inner reveal">
+          <div>
+            <p class="home-eyebrow">Ready when you are</p>
+            <h2>Start with a quote or reserve a support time.</h2>
+            <p>Chip-IT will help you choose the right next step for your device or digital project.</p>
+          </div>
+          <div class="final-cta__actions">
+            <a href="quote.html" class="btn btn-light btn-lg"><i class="bi bi-lightning-charge me-2"></i>Instant quote</a>
+            <a href="booking.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-2"></i>Book support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark py-3 footer-custom">
+    <div class="container d-flex align-items-center position-relative">
+      <p class="mb-0 text-white w-100 text-center">
+        Copyright &copy; <span data-current-year>2025</span> - David Banda
       </p>
-      <p class="lead">
-        <a href="services.html" class="btn btn-lg btn-secondary fw-bold">
-          Learn More
+      <div class="position-absolute end-0 me-3 social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61574150940398" class="text-white mx-1" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
         </a>
-      </p>
-    </main>
+        <a href="https://www.instagram.com/officialchipit?igsh=MXUwenYzZWJueGJ4eg%3D%3D&utm_source=qr" class="text-white mx-1" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/davidbanda89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-white mx-1" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="text-center mt-auto text-white-50">
-      <p>Copyright 2025 - David Banda</p>
-    </footer>
-
-  </div>
-
-  <!-- Bootstrap JS (CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="homepage.js"></script>
-  <script> window.chtlConfig = { chatbotId: "7741564378" } </script>
-  <script async data-id="7741564378" id="chatling-embed-script" type="text/javascript"
-    src="https://chatling.ai/js/embed.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="homepage.js"></script>
+  <script defer src="assets/js/site.js"></script>
 </body>
-
 </html>

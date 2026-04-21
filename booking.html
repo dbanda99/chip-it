@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | Chip-IT</title>
+  <meta name="description" content="Book a drop-off, home visit, or remote support appointment with Chip-IT." />
+  <meta name="theme-color" content="#0f79c0" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://chatling.ai" crossorigin />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="booking.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/optimized/favicon-32.png" />
+</head>
+
+<body class="booking-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Primary navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <picture class="me-2">
+            <source type="image/webp" srcset="images/optimized/White-Logo-64.webp 64w" />
+            <img src="images/optimized/White-Logo-64.png" alt="Chip-IT logo" width="30" height="30" decoding="async" />
+          </picture>
+          <span>Chip-IT</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="quote.html">Quote</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="booking-hero">
+      <picture>
+        <source type="image/webp" srcset="images/optimized/backup_01-960.webp 960w, images/optimized/backup_01-1280.webp 1280w, images/optimized/backup_01-1920.webp 1920w" sizes="100vw" />
+        <source type="image/jpeg" srcset="images/optimized/backup_01-960.jpg 960w, images/optimized/backup_01-1280.jpg 1280w, images/optimized/backup_01-1920.jpg 1920w" sizes="100vw" />
+        <img src="images/optimized/backup_01-1280.jpg" alt="Computer service desk" width="1920" height="960" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="booking-hero__shade"></div>
+      <div class="container booking-hero__content">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8 reveal">
+            <p class="booking-eyebrow">Book Chip-IT support</p>
+            <h1>Reserve a preferred time for service.</h1>
+            <p class="booking-hero__copy">Request a drop-off, home visit, remote support session, repair, setup, or digital project. Chip-IT will confirm availability before the appointment is final.</p>
+            <div class="booking-hero__actions">
+              <a href="#bookingForm" class="btn btn-primary btn-lg"><i class="bi bi-calendar2-check me-2"></i>Start request</a>
+              <a href="quote.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calculator me-2"></i>Need a quote?</a>
+            </div>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="booking-hero-card">
+              <i class="bi bi-clock-history"></i>
+              <div>
+                <span>Typical response</span>
+                <strong>Requests are reviewed quickly, usually within 24 hours.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-workspace">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <form id="bookingForm" class="booking-form reveal" novalidate>
+              <div class="booking-form__header">
+                <p class="booking-eyebrow dark">Request details</p>
+                <h2>Tell us what you need</h2>
+                <p>Choose the closest service and preferred time. Add notes if you have an error message, address, device details, or special instructions.</p>
+              </div>
+
+              <div class="booking-step">
+                <div class="booking-step__label">
+                  <span>01</span>
+                  <div>
+                    <h3>Service type</h3>
+                    <p>Pick how you want to get help.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="apptType">Appointment type</label>
+                    <select class="form-select" id="apptType" required>
+                      <option value="dropoff">Drop-off</option>
+                      <option value="home">Home visit</option>
+                      <option value="remote">Remote support</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="service">Service</label>
+                    <select class="form-select" id="service" required>
+                      <option value="diagnosis">Diagnosis / General troubleshooting</option>
+                      <option value="virus">Virus / Malware</option>
+                      <option value="performance">Slow / Overheating</option>
+                      <option value="network">Network / Wi-Fi</option>
+                      <option value="data">Data recovery</option>
+                      <option value="setup">New device setup</option>
+                      <option value="website">Website development</option>
+                      <option value="invitation">Online invitation</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step">
+                <div class="booking-step__label">
+                  <span>02</span>
+                  <div>
+                    <h3>Preferred time</h3>
+                    <p>This is a request. Chip-IT will confirm availability.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="date">Preferred date</label>
+                    <input class="form-control" type="date" id="date" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="time">Preferred time</label>
+                    <input class="form-control" type="time" id="time" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step">
+                <div class="booking-step__label">
+                  <span>03</span>
+                  <div>
+                    <h3>Your information</h3>
+                    <p>Used only to confirm and follow up on the request.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Your name</label>
+                    <input class="form-control" id="name" autocomplete="name" placeholder="Your full name" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input class="form-control" id="phone" autocomplete="tel" placeholder="(###) - ### - ####" required />
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" autocomplete="email" placeholder="you@example.com" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step">
+                <div class="booking-step__label">
+                  <span>04</span>
+                  <div>
+                    <h3>Notes</h3>
+                    <p>Include device model, address for home visits, or symptoms.</p>
+                  </div>
+                </div>
+                <label class="form-label" for="notes">Notes (optional)</label>
+                <textarea class="form-control" id="notes" rows="5" placeholder="Example: Dell laptop, Windows 11, very slow after login. Home visit address if needed."></textarea>
+              </div>
+
+              <div class="booking-actions">
+                <button type="button" id="btnPreview" class="btn btn-primary">
+                  <i class="bi bi-check2-circle me-2"></i>Preview request
+                </button>
+                <button type="button" id="btnAddToCalendar" class="btn btn-outline-secondary">
+                  <i class="bi bi-calendar-plus me-2"></i>Add calendar hold
+                </button>
+                <button type="button" id="btnSend" class="btn btn-outline-primary booking-send">
+                  <i class="bi bi-send me-2"></i>Submit request
+                </button>
+              </div>
+
+              <p class="booking-note">
+                Booking requests are not final until Chip-IT confirms the time. If submission fails, you can still copy the preview and send it manually.
+              </p>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <aside class="booking-preview-card sticky-lg-top reveal" aria-label="Booking request preview">
+              <div class="booking-preview-card__top">
+                <div>
+                  <p class="booking-eyebrow dark">Live preview</p>
+                  <h2>Request summary</h2>
+                </div>
+                <span class="booking-badge"><i class="bi bi-lightning-charge"></i>Quick</span>
+              </div>
+
+              <div class="booking-preview" id="previewBox">Fill the form to preview your booking request.</div>
+
+              <div class="booking-next">
+                <div>
+                  <h3>Need price guidance first?</h3>
+                  <p>Use the quote estimator to generate a range before booking.</p>
+                </div>
+                <a href="quote.html" class="btn btn-primary"><i class="bi bi-calculator me-2"></i>Quote</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark py-3 footer-custom">
+    <div class="container d-flex align-items-center position-relative">
+      <p class="mb-0 text-white w-100 text-center">
+        Copyright &copy; <span data-current-year>2025</span> - David Banda
+      </p>
+      <div class="position-absolute end-0 me-3 social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61574150940398" class="text-white mx-1" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/officialchipit?igsh=MXUwenYzZWJueGJ4eg%3D%3D&utm_source=qr" class="text-white mx-1" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/davidbanda89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-white mx-1" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="booking.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</body>
+</html>

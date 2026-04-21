@@ -1,0 +1,5 @@
+/* portfolio.css */
+.work-card .badge { font-weight: 600; }
+.work-card img { border-radius: 1rem 1rem 0 0; }
+.work-meta { color: rgba(11,18,32,0.7); font-size: .9rem; }
+.work-results { white-space: pre-wrap; }

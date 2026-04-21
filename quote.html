@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instant Quote | Chip-IT</title>
+  <meta name="description" content="Get a quick Chip-IT price range and ETA for computer repair, troubleshooting, home visits, remote support, websites, and invitations." />
+  <meta name="theme-color" content="#0f79c0" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://chatling.ai" crossorigin />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="quote.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/optimized/favicon-32.png" />
+</head>
+
+<body class="quote-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Primary navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <picture class="me-2">
+            <source type="image/webp" srcset="images/optimized/White-Logo-64.webp 64w" />
+            <img src="images/optimized/White-Logo-64.png" alt="Chip-IT logo" width="30" height="30" decoding="async" />
+          </picture>
+          <span>Chip-IT</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="quote.html">Quote</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="quote-hero">
+      <picture>
+        <source type="image/webp" srcset="images/optimized/backup_01-960.webp 960w, images/optimized/backup_01-1280.webp 1280w, images/optimized/backup_01-1920.webp 1920w" sizes="100vw" />
+        <source type="image/jpeg" srcset="images/optimized/backup_01-960.jpg 960w, images/optimized/backup_01-1280.jpg 1280w, images/optimized/backup_01-1920.jpg 1920w" sizes="100vw" />
+        <img src="images/optimized/backup_01-1280.jpg" alt="Computer support desk" width="1920" height="960" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="quote-hero__shade"></div>
+      <div class="container quote-hero__content">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8 reveal">
+            <p class="quote-eyebrow">Instant quote estimator</p>
+            <h1>Get a practical price range before you book.</h1>
+            <p class="quote-hero__copy">Answer a few quick questions to estimate cost and timing for repairs, cleanup, data recovery, remote support, websites, and online invitations.</p>
+            <div class="quote-hero__actions">
+              <a href="#quoteForm" class="btn btn-primary btn-lg"><i class="bi bi-calculator me-2"></i>Start estimate</a>
+              <a href="booking.html" class="btn btn-outline-light btn-lg"><i class="bi bi-calendar2-check me-2"></i>Book instead</a>
+            </div>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="quote-hero-card">
+              <span class="quote-hero-card__icon"><i class="bi bi-receipt-cutoff"></i></span>
+              <div>
+                <p>Quote includes</p>
+                <strong>Range, ETA, and a ready-to-send service summary.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-workspace">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <form id="quoteForm" class="quote-form reveal" novalidate>
+              <div class="quote-form__header">
+                <p class="quote-eyebrow dark">Estimator</p>
+                <h2>Tell us what you need</h2>
+                <p>Choose the closest match. You can add details if the issue is hard to describe.</p>
+              </div>
+
+              <div class="quote-step">
+                <div class="quote-step__label">
+                  <span>01</span>
+                  <div>
+                    <h3>Device and issue</h3>
+                    <p>Start with the device type and main problem.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="deviceType">Device</label>
+                    <select class="form-select" id="deviceType" required>
+                      <option value="laptop">Laptop</option>
+                      <option value="desktop">Desktop</option>
+                      <option value="mac">Mac</option>
+                      <option value="phone">Phone</option>
+                      <option value="tablet">Tablet</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="issueType">Issue</label>
+                    <select class="form-select" id="issueType" required>
+                      <option value="virus">Virus / Malware</option>
+                      <option value="slow">Slow / Overheating</option>
+                      <option value="noboot">Won't boot</option>
+                      <option value="screen">Screen / display</option>
+                      <option value="data">Data recovery</option>
+                      <option value="network">Network / Wi-Fi</option>
+                      <option value="setup">Setup / New device</option>
+                      <option value="website">Website development</option>
+                      <option value="invitation">Online invitation</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quote-step">
+                <div class="quote-step__label">
+                  <span>02</span>
+                  <div>
+                    <h3>Timing and support type</h3>
+                    <p>Urgency and visit type can affect the estimate.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="urgency">Urgency</label>
+                    <select class="form-select" id="urgency" required>
+                      <option value="standard">Standard (2-3 days)</option>
+                      <option value="priority">Priority (24 hours)</option>
+                      <option value="emergency">Emergency (same day)</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label" for="serviceMode">Service type</label>
+                    <select class="form-select" id="serviceMode" required>
+                      <option value="dropoff">Drop-off</option>
+                      <option value="home">Home visit</option>
+                      <option value="remote">Remote support</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quote-step">
+                <div class="quote-step__label">
+                  <span>03</span>
+                  <div>
+                    <h3>Add-ons</h3>
+                    <p>Optional services that can be included in the same visit.</p>
+                  </div>
+                </div>
+                <div class="addon-grid">
+                  <label class="addon-option" for="addonBackup">
+                    <input class="form-check-input" type="checkbox" id="addonBackup">
+                    <span><i class="bi bi-hdd-stack"></i>Backup setup</span>
+                  </label>
+                  <label class="addon-option" for="addonCleanup">
+                    <input class="form-check-input" type="checkbox" id="addonCleanup">
+                    <span><i class="bi bi-stars"></i>Deep cleaning / tune-up</span>
+                  </label>
+                  <label class="addon-option" for="addonInstall">
+                    <input class="form-check-input" type="checkbox" id="addonInstall">
+                    <span><i class="bi bi-download"></i>Software install</span>
+                  </label>
+                  <label class="addon-option" for="addonExplain">
+                    <input class="form-check-input" type="checkbox" id="addonExplain">
+                    <span><i class="bi bi-person-video3"></i>Walkthrough / training</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quote-step">
+                <div class="quote-step__label">
+                  <span>04</span>
+                  <div>
+                    <h3>Extra details</h3>
+                    <p>Error messages, symptoms, timing, or anything already tried.</p>
+                  </div>
+                </div>
+                <label class="form-label" for="details">Details (optional)</label>
+                <textarea class="form-control" id="details" rows="5" placeholder="Example: My laptop freezes after startup and the fan gets loud. It started yesterday."></textarea>
+              </div>
+
+              <div class="quote-actions">
+                <button type="button" id="btnUpdateQuote" class="btn btn-primary">
+                  <i class="bi bi-calculator me-2"></i>Update estimate
+                </button>
+                <button type="button" id="btnCopyQuote" class="btn btn-outline-secondary">
+                  <i class="bi bi-clipboard me-2"></i>Copy summary
+                </button>
+                <button type="button" id="btnSendToBooking" class="btn btn-outline-primary quote-send">
+                  <i class="bi bi-send me-2"></i>Send to booking
+                </button>
+              </div>
+
+              <p class="quote-note">
+                Estimates are guidelines. Some repairs require diagnosis, parts checks, or approval before final pricing is confirmed.
+              </p>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <aside class="quote-result sticky-lg-top reveal" aria-label="Quote estimate">
+              <div class="quote-result__top">
+                <div>
+                  <p class="quote-eyebrow dark">Live estimate</p>
+                  <h2>Your quote</h2>
+                </div>
+                <span class="quote-badge"><i class="bi bi-lightning-charge"></i>Instant</span>
+              </div>
+
+              <div class="quote-price-card">
+                <span class="quote-price-label">Estimated range</span>
+                <div class="quote-range" id="quoteRange">$--</div>
+                <div class="quote-sub" id="quoteEta">ETA: --</div>
+              </div>
+
+              <div class="quote-metrics" aria-label="Estimate notes">
+                <div>
+                  <i class="bi bi-shield-check"></i>
+                  <span>Approval first</span>
+                </div>
+                <div>
+                  <i class="bi bi-clock-history"></i>
+                  <span>ETA included</span>
+                </div>
+                <div>
+                  <i class="bi bi-send"></i>
+                  <span>Booking-ready</span>
+                </div>
+              </div>
+
+              <div class="quote-summary-wrap">
+                <div class="quote-summary-header">
+                  <div>
+                    <span>Summary</span>
+                    <strong>Service details</strong>
+                  </div>
+                  <i class="bi bi-list-check"></i>
+                </div>
+                <div id="quoteSummary" class="quote-summary">Choose options to see your estimate.</div>
+              </div>
+
+              <div class="quote-next">
+                <div>
+                  <h3>Want the fastest route?</h3>
+                  <p>Book a preferred time and Chip-IT will confirm details quickly.</p>
+                </div>
+                <a href="booking.html" class="btn btn-primary"><i class="bi bi-calendar2-check me-2"></i>Book now</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark py-3 footer-custom">
+    <div class="container d-flex align-items-center position-relative">
+      <p class="mb-0 text-white w-100 text-center">
+        Copyright &copy; <span data-current-year>2025</span> - David Banda
+      </p>
+      <div class="position-absolute end-0 me-3 social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61574150940398" class="text-white mx-1" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/officialchipit?igsh=MXUwenYzZWJueGJ4eg%3D%3D&utm_source=qr" class="text-white mx-1" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/davidbanda89?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-white mx-1" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="quote.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</body>
+</html>
