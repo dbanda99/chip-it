@@ -1,7 +1,7 @@
 /* Chip-IT Service Worker
    Lightweight offline + faster repeat loads (images + assets).
 */
-const CACHE_VERSION = 'chipit-v1.2.1';
+const CACHE_VERSION = 'chipit-v1.2.2';
 const CORE_CACHE = `${CACHE_VERSION}-core`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const IMG_CACHE = `${CACHE_VERSION}-images`;
